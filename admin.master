@@ -1,0 +1,96 @@
+﻿<%@ Master Language="VB" CodeFile="admin.master.vb" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TTO-Danısmanlık</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        <!--
+body {
+	background-image: url(resim/arka2.jpg);
+}
+    .style2
+    {
+        height: 30px;
+    }
+    .style4
+    {
+        height: 4px;
+    }
+    .style7
+    {
+        height: 14px;
+    }
+    .style8
+    {
+        height: 24px;
+    }
+    .style9
+    {
+        height: 15px;
+    }
+    .style10
+    {
+        height: 12px;
+    }
+-->
+
+        .style1
+        {
+            width: 105px;
+        }
+    </style>
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:100%;" bgcolor="White">
+            <tr>
+                <td abbr="selam" colspan="2">
+                    Kullanıcı Sayfası
+                </td>
+            </tr>
+            <tr>
+                <td abbr="selam" colspan="2">
+                    <asp:Label ID="Label1" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="UzmanEkle.aspx"> Uzman - Ekle </asp:HyperLink>
+                </td>
+                <td rowspan="5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="uzmanekle.aspx">Uzman Ekle</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" class="style1">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="UzmanSil.aspx"> Uzman 
+                    Sil</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" class="style1">
+                    <asp:HyperLink ID="HyperLink4" runat="server" 
+                        NavigateUrl="UzmanSil.aspx          ">Uzman Sil</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" class="style1">
+                    <asp:Button ID="Button1" runat="server" Text="Çıkış" Width="62px" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
